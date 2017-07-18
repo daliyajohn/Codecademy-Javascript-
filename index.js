@@ -125,3 +125,64 @@ switch (moonPhase ) {
     console.log('Invalid item');
     break;
 }
+
+
+// function - Example  1
+function takeOrder () {
+  console.log('Order: pizza');
+}
+takeOrder();
+
+// we can use parameters
+function takeOrder (topping) {
+  console.log('Order: pizza topped with' + topping);
+}
+takeOrder('daliya');
+
+
+// We can set as many parameters
+function takeOrder (topping, crustType ) {
+  console.log('Order: pizza topped with' + crustType);
+
+}
+takeOrder('daliya1', 'john1');
+takeOrder('daliya2', 'john2');
+takeOrder('daliya3', 'john3');
+
+// Example 2
+var orderCount =0;
+var pizzaOrder ;
+orderCount = orderCount +1;
+orderCount = orderCount *7;
+function takeOrder  () {
+  orderCount = orderCount +1;
+  
+}
+function getSubTotal(itemCount) {
+    return itemCount *7.5;
+  }
+takeOrder ();
+console.log(getSubTotal(orderCount));
+
+
+// Example 3
+var orderCount =0;
+var pizzaOrder ;
+orderCount = orderCount +1;
+orderCount = orderCount *7;
+function takeOrder  () {
+  orderCount = orderCount +1;
+}
+function getSubTotal(itemCount) {
+    return itemCount *7.5;
+}
+function getTax() {
+  return getSubTotal(orderCount)*0.06;
+} 
+function getTotal  () {
+  return  getSubTotal(orderCount) + getTax();
+}
+takeOrder ();
+getTax();
+console.log(getTotal());
+console.log(getSubTotal(orderCount));
