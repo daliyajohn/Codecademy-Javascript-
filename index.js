@@ -186,3 +186,20 @@ takeOrder ();
 getTax();
 console.log(getTotal());
 console.log(getSubTotal(orderCount));
+
+// Scope
+var laundryRoom = 'Basement';
+var mailRoom = 'Room 1A';
+console.log('ddd' + laundryRoom , 'fff' +mailRoom);
+
+// scope with function
+var laundryRoom = 'Basement';
+var mailRoom = 'Room 1A';
+console.log('ddd' + laundryRoom , 'fff' +mailRoom);
+function myApartment() {
+  var mailBoxNumber = 'Box 3';
+  laundryRoom = 'In-unit';
+  console.log('Mail box: ' + mailBoxNumber + ', Laundry:' + laundryRoom);
+}
+myApartment();
+
