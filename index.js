@@ -203,3 +203,47 @@ function myApartment() {
 }
 myApartment();
 
+// Array   
+var bucketList =['daliya', 'seeniya', 'viji'];
+console.log(bucketList );
+
+//array example 2
+var bucketList =['daliya', 'seeniya', 'viji'];
+console.log(bucketList );
+var listItem = bucketList[0];
+var listItem = bucketList[3];
+console.log(listItem );
+console.log(listItem);
+
+// length of array
+var bucketList =['daliya', 'seeniya', 'viji'];
+console.log(bucketList );
+var listItem = bucketList[0];
+var listItem = bucketList[3];
+console.log(listItem );
+console.log(listItem);
+console.log(bucketList.length);
+
+//array push
+var bucketList =['daliya', 'seeniya', 'viji'];
+console.log(bucketList );
+var listItem = bucketList[0];
+var listItem = bucketList[3];
+console.log(listItem );
+console.log(listItem);
+console.log(bucketList.length);
+bucketList.push('dalimol', 'vijimol');
+console.log(bucketList);
+
+//array pop
+var bucketList =['daliya', 'seeniya', 'viji'];
+console.log(bucketList );
+var listItem = bucketList[0];
+var listItem = bucketList[3];
+console.log(listItem );
+console.log(listItem);
+console.log(bucketList.length);
+bucketList.push('dalimol', 'vijimol');
+console.log(bucketList);
+bucketList.pop('dalimol', 'vijimol');
+
