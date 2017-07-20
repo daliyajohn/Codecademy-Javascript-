@@ -247,3 +247,34 @@ bucketList.push('dalimol', 'vijimol');
 console.log(bucketList);
 bucketList.pop('dalimol', 'vijimol');
 
+
+//for loop
+var vacationSpots = ['daliya','seeniya','viji'];
+for (var i=0; i<vacationSpots.length; i++) {
+  console.log('I would love to visit '+ vacationSpots[i]);
+}
+
+// for loop with array
+var myPlaces =['kollam', 'tvm','ktym'];
+var friendPlaces = ['place1', 'plce2', 'place3'];
+for (var i=0; i<myPlaces.length; i++) {
+  console.log(myPlaces[i]);
+  for(var j=0; j<friendPlaces.length; j++){
+    if(myPlaces[i]===friendPlaces[j]){
+       console.log(friendPlaces[j]);
+       }
+    else {
+      console.log('undefined');
+    }
+  }
+}
+
+// while loop
+var cards = ['Diamond', 'Spade', 'Heart', 'Club'];
+var currentCard = 'Heart';
+while (currentCard !== 'Spade') {
+  console.log(currentCard);  
+  var randomNumber = Math.floor(Math.random() * 4);
+  currentCard = cards[randomNumber];
+}
+console.log('Found a Spade!');
