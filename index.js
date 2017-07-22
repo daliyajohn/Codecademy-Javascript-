@@ -278,3 +278,54 @@ while (currentCard !== 'Spade') {
   currentCard = cards[randomNumber];
 }
 console.log('Found a Spade!');
+
+// Alert
+alert('Hello JavaScript!');
+
+//get id
+var skillset = document.getElementsByClassName('skillset');
+alert(skillset);
+
+// ready function
+function main() {
+}
+$(document).ready(main);
+
+//fade
+function main() {
+  $('.skillset').hide();
+  $('.skillset').fadeIn(1000);
+}
+
+$(document).ready(main);
+
+// on click
+function main() {
+  $('.skillset').hide();
+  $('.skillset').fadeIn(1000);
+  $('.projects').hide();
+  $('.projects-button').on('click', function () { })
+}
+$(document).ready(main);
+
+//show div
+  $('.projects').show();
+
+//toggle on button click
+ $('.projects-button').on('click', function () { 
+  $('.projects').toggle();
+})
+
+//toggle class active
+ $('.projects-button').toggleClass('active');
+
+//this - avoid multiple use of class
+  $(this).toggleClass('active');
+
+//next()
+$(this).next().toggle();
+
+//text
+$('.projects-button').on('click', function () { 
+  $(this).text('Projects Viewed');
+})
