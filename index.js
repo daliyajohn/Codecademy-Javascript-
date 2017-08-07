@@ -329,3 +329,70 @@ $(this).next().toggle();
 $('.projects-button').on('click', function () { 
   $(this).text('Projects Viewed');
 })
+
+
+// Understand String Immutability 
+var myStr = "Jello World";
+myStr = "Hello World"; 
+
+// Use Bracket Notation to Find the Nth Character in a String
+var firstName = "Ada";
+var secondLetterOfFirstName = firstName[1];
+var lastName = "Lovelace";
+var thirdLetterOfLastName = lastName[2];
+
+// Use Bracket Notation to Find the Last Character in a String
+var firstName = "Ada";
+var lastLetterOfFirstName = firstName[firstName.length - 1];
+var lastName = "Lovelace";
+var lastLetterOfLastName = lastName[lastName.length -1];
+
+// Word Blanks 
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+  var result = "";
+  result+= "My "+myAdjective+" "+myNoun+" "+myVerb+" very "+myAdverb+".";
+  return result;
+}
+wordBlanks("dog2", "big5", "ran1", "quickly8");
+
+// Store Multiple Values in one Variable using JavaScript Arrays
+var myArray = ["daliya",56 ];
+
+// Nest one Array within Another Array
+var ourArray = [["the universe", 42], ["everything", 101010]];
+
+// Access Array Data with Indexes
+var myArray = [1,2,3];
+var myData = myArray[0];
+
+// Modify Array Data With Indexes
+var myArray = [1,2,3];
+myArray[0]=3;
+myArray[1]=2;
+myArray[2]=3;
+
+// Access MultiDimensional Arrays With Indexes
+var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
+var myData = myArray[2][1];  // value 8
+
+// Manipulate Arrays With push
+var myArray = [["John", 23], ["cat", 2]];
+myArray.push(["dog", 3]);
+
+// Manipulate Arrays With pop
+var myArray = [["John", 23], ["cat", 2]];
+var removedFromMyArray =myArray.pop(["cat", 2]);
+
+// Manipulate Arrays With shift
+var myArray = [["John", 23], ["dog", 3]];
+var removedFromMyArray =myArray.shift(["John", 23]);   //removes the first element instead of the last.
+
+// Manipulate Arrays With unshift
+var myArray = [["John", 23], ["dog", 3]];
+myArray.shift(["John", 23]);
+myArray.unshift(["Paul", 35]);
+
+
+// Shopping List
+var myList = [["daliya", 5, 5], ["seeniya", 5, 5] , ["viji", 5, 5], ["john", 5, 5], ["vincy", 5, 5]];
+
